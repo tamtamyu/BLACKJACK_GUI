@@ -1,6 +1,7 @@
-#include "BlackjackGame.hpp"
+#include "BlackjackGame.h"
 
 #include <random>
+#include <algorithm>
 
 vector<Card> BlackjackGame::createDeck()
 {

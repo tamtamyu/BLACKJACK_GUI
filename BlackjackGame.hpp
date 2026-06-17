@@ -1,34 +1,12 @@
-#ifndef BLACKJACKGAME_HPP
-#define BLACKJACKGAME_HPP
+#ifndef BLACKJACKGAME_H
+#define BLACKJACKGAME_H
 
 #include <vector>
 
-#include "Card.hpp"
-
-using namespace std;
+#include "Card.h"
 
 class BlackjackGame
 {
-private:
-    vector<Card> deck;
-    vector<Card> playerHand;
-    vector<Card> dealerHand;
-
-    int chips = 10;
-    int bet = 1;
-    int round = 1;
-
-    int wins = 0;
-    int losses = 0;
-    int ties = 0;
-
-    bool roundActive = false;
-    bool dealerHidden = true;
-    bool dealerTurn = false;
-    bool doubleDownUsed = false;
-
-    string message = "If you can turn $10 into $20 or more, you win.";
-
 private:
     vector<Card> deck;
     vector<Card> playerHand;
@@ -109,4 +87,4 @@ public:
     }
 };
 
-#endif
+#endif // BLACKJACKGAME_H
